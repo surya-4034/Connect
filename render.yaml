@@ -1,0 +1,25 @@
+services:
+  - type: web
+    name: kaam-api
+    runtime: node
+    plan: free
+    rootDir: server
+    buildCommand: npm install
+    startCommand: node index.js
+    healthCheckPath: /api/health
+    autoDeploy: true
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 5050
+      - key: JWT_SECRET
+        value: kaam_super_secret_jwt_key_2026
+      - key: RESEND_API_KEY
+        sync: false
+      - key: EMAIL_USER
+        value: kaam@yors.online
+      - key: EMAIL_PASS
+        value: "Aa065405#"
+      - key: MONGO_URI
+        value: mongodb://sujal:Sujal957@ac-kgra4ds-shard-00-00.0yxyzl6.mongodb.net:27017,ac-kgra4ds-shard-00-01.0yxyzl6.mongodb.net:27017,ac-kgra4ds-shard-00-02.0yxyzl6.mongodb.net:27017/kaam_db?ssl=true&authSource=admin&replicaSet=atlas-joqohk-shard-0

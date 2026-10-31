@@ -1,0 +1,41 @@
+# Dependencies
+node_modules/
+
+# Production build outputs
+dist/
+build/
+
+# Operating System & IDE
+.DS_Store
+._*
+.vscode/
+.idea/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Environment files
+.env
+.env.*
+!.env.example
+!*/.env.example
+
+# Databases & local caches
+*.sqlite
+*.sqlite3
+*.db
+
+# Videos, test artifacts & scratch files
+Videos/
+tests/
+server/tests/
+server/demo.html
+create_word_doc.py
+build_final_cis_notebook.py
+cis-practicals.html
+*.docx
+*.zip
+*.backup*
+
+
